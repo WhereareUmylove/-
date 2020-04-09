@@ -1,0 +1,25 @@
+<view class="container">
+  <view class="clock-container">
+    <view class="clock-digital">
+      <view class="date"></view>
+      <view class="time"></view>
+      <view class="day"> </view>
+    </view>
+    <view class="clock-analog">
+      <view class="spear"></view>
+      <view class="hour" style='transform: rotate("{{dh}}"deg);'>
+        <view class="viewview" wx:for="{{hourDate}}" wx:key="x">{{item.content}}</view>
+      </view>
+      <view class="minute" style='transform: rotate("{{dm}}"deg);'>
+        <view class="viewview" wx:for="{{dailerDateMinute}}" wx:key="x" style='transform: rotate("{{item.rotate}}"deg);translateX("{{item.translateX}}"px);'>{{item.content}}</view>
+      </view>
+      <view class="second" style='transform: rotate("{{ds}}"deg);'>
+        <view class="viewview" wx:for="{{dailerDateSecond}}" wx:key="x" style='transform: rotate("{{item.rotate}}"deg);translateX("{{item.translateX}}"px);'>{{item.content}}</view>
+      </view>
+      <view class="dail">
+        <view class="viewview" wx:for="{{dailerDateDail}}" wx:key="x" style='transform: rotate("{{item.rotate}}"deg);translateX("{{item.translateX}}"px);'>{{item.content}}</view>
+      </view>
+    </view>
+  </view>
+  <slot></slot>
+</view>

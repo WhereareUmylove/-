@@ -1,0 +1,5 @@
+<view class="container">
+  <view wx:if="{{lottoNumber}}">{{lottoNumber}}</view>
+  <view wx:else>点击获取显示你的致富之道</view>
+  <button bindtap="getLotto" class="weui-btn" type="primary">获取</button>
+</view>

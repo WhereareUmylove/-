@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "lotto-component":"../../components/lotto/lotto"
+  }
+}
